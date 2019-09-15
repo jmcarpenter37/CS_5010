@@ -46,8 +46,21 @@ num_two = float(input()) # Taking in the second number
 mult = float(num_one*num_two) # Cast as a float
 print("Hi , {}! Multplying {} and {} is: {}".format(first , num_one, num_two, mult))
 
+# Q3 Guessing game
+name = "Watson"
+guess_start = 0  # Use as a counter
+while guess_start < 3:
+    guess = input().strip() # Strip off the white space
+    print("Guess the name of the computer who played on Jeopardy. You have 3 tries!")
+    if guess == name:
+        print("That's correct! Gameover")
+        break
+    elif guess != name:
+        guess_start += 1
+        print("Try again")
+print("You ran out of tries!")
 
-# Q3
+# Q4
 sent = "are you suggesting coconuts migrate"
 a = 0
 e = 0
@@ -73,4 +86,4 @@ print("The number of i's are: {}".format(i))
 print("The number of o's are: {}".format(o))
 print("The number of u's are: {}".format(u))
 
-#Q4 
+#Q5

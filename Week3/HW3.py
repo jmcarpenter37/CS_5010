@@ -2,7 +2,7 @@
 # Name: John Carpenter
 # Class: CS 5010
 # Homework #3
-
+import functools
 # Q1 Create a dictionary of 10 key-value pairs. Choose a domain that interests you. What might you want to look up?
 # Using a set of nested dictionaries to query some NHL teams in the Eastern Conference.
 dict = {
@@ -114,3 +114,8 @@ print(unique)
 # Q6 In the PowerPoint slides describing "higher-order functions" (02-Python - Map Filter Reduce.pdf) there are three examples:
 # one illustrating the use of map, the next one illustrating the use of filter, and the last one illustrating the use of reduce.
 # Rewrite these three examples without using the map(), filter(), and functools.reduce() functions.
+# Map
+
+# Filter
+
+# Reduce

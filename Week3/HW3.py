@@ -114,8 +114,31 @@ print(unique)
 # Q6 In the PowerPoint slides describing "higher-order functions" (02-Python - Map Filter Reduce.pdf) there are three examples:
 # one illustrating the use of map, the next one illustrating the use of filter, and the last one illustrating the use of reduce.
 # Rewrite these three examples without using the map(), filter(), and functools.reduce() functions.
+
 # Map
-
+import numpy as np
+# I am going to use numpy since it can take operations and vectorize them
+num_list = [1,2,3,4,5]
+print("The squares of the entries in your list are: " , np.square(num_list))
+print("#####################################################################\n")
 # Filter
-
+# We use the math operator mod() or modulus to look through a list and grab the odd numbers
+# This is done when Xmod(2) != 0
+num_list = [1,2,3,4,5]
+# For this example we should only get back 1 , 3 , and 5
+odd_number = []
+for i in np.arange(0,len(num_list),1):
+    if num_list[i] % 2 != 0:
+        print("Found an odd number: " , num_list[i])
+        odd_number.append(num_list[i])
+    else:
+        pass
+print("The odd numbers in a list are: " , odd_number)
+print("#####################################################################\n")
 # Reduce
+# Again we will use numpy to vectorize a sum for us
+print("The sum of the list provided is: " , np.sum(num_list))
+print("#####################################################################\n")
+
+
+# Q7

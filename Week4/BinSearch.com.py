@@ -20,7 +20,7 @@ def BinarySearch(item_list  , target  ):
             else: # Else if the target is larger thatn the mid point number then we continue to shift up by one until we find it
                 first_num = mid_point_index + 1
     return found_num
-# If all of this fails then it will return the default of found_num which is False! 
+# If all of this fails then it will return the default of found_num which is False!
 
 result = BinarySearch(list_num , 8)
 print(result)

@@ -1,6 +1,6 @@
 # Author: John Carpenter
 # ID: jmc7dt
-# Course: CS 5021
+# Course: CS 5010
 # Screen capture(JPEG) or copy & paste three runs of your programs.
 
 # Output:
@@ -8,6 +8,8 @@
 # If the element is not in the list, the function should return a sentinel value
 # If the element is in the list multiple times, return the first position
 
+# Sequential search allows us to brute force our way through the array
+# that we provide to the functions and find the target we are looking for.
 def seq_search(array , target):
     pos = 0 # using pos object as a counter
     found = False # the default is set to false becuase we haven't found anything yet

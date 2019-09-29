@@ -1,0 +1,4 @@
+('Your target was: 3', 'The position of the target is: 2')
+('Your target was: 4', 'The position of the target is: 3')
+('Your target was: 89', 'The position of the target is: 7')
+(False, 'Your target was not found in the array provided.')

@@ -1,0 +1,15 @@
+Testing started at 4:01 PM ...
+C:\Users\jmcarpenter\AppData\Local\Continuum\anaconda3\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2018.3.3\helpers\pycharm\_jb_pytest_runner.py" --path "C:/Users/jmcarpenter/Desktop/UVA Graduate School Stuff/CS_DataScience_5010/CS_5010/Week5/Account/AccountTest.py"
+Launching pytest with arguments C:/Users/jmcarpenter/Desktop/UVA Graduate School Stuff/CS_DataScience_5010/CS_5010/Week5/Account/AccountTest.py in C:\Users\jmcarpenter\Desktop\UVA Graduate School Stuff\CS_DataScience_5010\CS_5010\Week5\Account
+
+============================= test session starts =============================
+platform win32 -- Python 3.6.4, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+rootdir: C:\Users\jmcarpenter\Desktop\UVA Graduate School Stuff\CS_DataScience_5010\CS_5010\Week5\Account, inifile:
+collected 6 items
+AccountTest.py 
+
+========================== 6 passed in 0.08 seconds ===========================..Checking account number test:  12345
+..Checking inherit test:  500
+.Checking inherit fee:  5
+.                                                    [100%]
+Process finished with exit code 0

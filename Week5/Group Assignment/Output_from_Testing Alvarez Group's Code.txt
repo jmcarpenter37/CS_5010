@@ -1,0 +1,66 @@
+In [18]: runfile('/Users/omkar.kharkar/Personal/Testing_Code.py', wdir='/Users/omkar.kharkar/Personal')
+.FEE.FF.Reloaded modules: Mod_5_debugging_unit_test, Module_5_Class_Testing, Module_5_Assignment
+
+======================================================================
+ERROR: test_favBooks_rating_ge_3 (__main__.BookLoverTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omkar.kharkar/Personal/Testing_Code.py", line 89, in test_favBooks_rating_ge_3
+    self.assertEqual(fav_book_list, self.mary.favBooks())
+  File "/Users/omkar.kharkar/Personal/Mod_5_debugging_unit_test.py", line 64, in favBooks
+    if book[1] >2:              # error, should be >3
+TypeError: '>' not supported between instances of 'tuple' and 'int'
+
+======================================================================
+ERROR: test_favBooks_rating_lt_3 (__main__.BookLoverTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omkar.kharkar/Personal/Testing_Code.py", line 85, in test_favBooks_rating_lt_3
+    self.assertEqual([], self.katy.favBooks())
+  File "/Users/omkar.kharkar/Personal/Mod_5_debugging_unit_test.py", line 64, in favBooks
+    if book[1] >2:              # error, should be >3
+TypeError: '>' not supported between instances of 'tuple' and 'int'
+
+======================================================================
+FAIL: test_addBook_Present (__main__.BookLoverTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omkar.kharkar/Personal/Testing_Code.py", line 40, in test_addBook_Present
+    val = self.assertTrue(bookname in test_list)
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_hasRead_Present (__main__.BookLoverTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omkar.kharkar/Personal/Testing_Code.py", line 69, in test_hasRead_Present
+    self.assertTrue(self.mary.hasRead(val))
+AssertionError: False is not true
+
+======================================================================
+FAIL: test_numBooksRead_eq_0 (__main__.BookLoverTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omkar.kharkar/Personal/Testing_Code.py", line 58, in test_numBooksRead_eq_0
+    self.assertEqual(0, val)
+AssertionError: 0 != 1
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.011s
+
+
+TESTING NEEDED FOR FINAL PROJECT:
+ 
+
+Since we may be writing classes that contain computational funtions I would suggest using the DOCTEST modcule.
+
+A nice unit test to check would be the assertRaises() function to verify a certain exception is raised.
+
+The data cleansing process is a very step by step oriented process. So we could use the setUp() and teatDown() functions 
+to ensure that instructions are executed before or after each test method.
+
+
+
+
+
+FAILED (failures=3, errors=2)

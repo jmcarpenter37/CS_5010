@@ -1,0 +1,8 @@
+============================= test session starts =============================
+platform win32 -- Python 3.6.4, pytest-3.3.2, py-1.5.2, pluggy-0.6.0
+rootdir: C:\Users\jmcarpenter\Desktop\UVA Graduate School Stuff\CS_DataScience_5010\CS_5010\Week5\UnitTesting, inifile:
+collected 2 items
+AStudent_Test.py 
+
+========================== 2 passed in 0.08 seconds ===========================..                                                      [100%]
+Process finished with exit code 0

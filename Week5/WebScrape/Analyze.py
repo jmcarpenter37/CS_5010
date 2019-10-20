@@ -52,7 +52,6 @@ print("Points scored from 3 pointers last season: ",total_three_pts)
 # The proporportion of total points scored throughout the season in relationship to three pointers
 three_pts_to_total_pts = total_three_pts / total_points * 100
 print("Percent of total points that were 3pts: {}%".format(round(three_pts_to_total_pts,2))) # Use round operator to carry to 2 decimal places
-# Get summary statistics on the data
 # Free throw percentage analysis
 ftp = np.array(clean_data["Unnamed: 14"].iloc[1:].astype(float) )
 #

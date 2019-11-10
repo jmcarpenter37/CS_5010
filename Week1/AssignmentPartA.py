@@ -1,7 +1,7 @@
-# Author: John M Carpenter
+# Name of Activity: Python Assignment 1 Part A
+# Name: John Carpenter
+# ID: jmc7dt
 # Date: 8/29/2019
-# Class: CS 5010
-# Assignment: Python Part A
 import sys
 import os
 # sys.stdout = open("TestFile.txt" , 'a')
@@ -17,7 +17,7 @@ while counter <= 3:
     last = last.strip() # Stripping the leading and trailing whitespace
     print("Please enter your age: ")
     age = input()
-    age = int(age.strip()) # Stripping the leading and trailing whitespace
+    age = int(age.strip()) # Stripping the leading and trailing whitespace and casting age as an int
     # Concatenate the First name and Last name into a single string so it looks like "Last-First"
     concat = last + "-" + first
     # print("Dict pre: {}".format(dict)) Used to make sure the dictionary was updating

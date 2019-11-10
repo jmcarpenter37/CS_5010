@@ -26,7 +26,8 @@ class Checking(Account):
 
     def __str__(self):
         baseString = Account.__str__(self)
-        return "The account type is Checking.\n{}".format(  baseString )
+        inheritFee = self.fee
+        return "The account type is Checking.\n{}\nThe fee with this accoutn is: {}".format(  baseString , inheritFee)
 
 
 test2 = Checking('12345' , 30000 , 3)
